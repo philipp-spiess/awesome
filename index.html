@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TinyMCE Skin "Awesome"</title>
+<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+<!-- TinyMCE -->
+<script type="text/javascript" src="./jscripts/tiny_mce/tiny_mce.js"></script>
+<script type="text/javascript">
+	// O2k7 skin
+	tinyMCE.init({
+		// General options
+		mode : "exact",
+		elements : "e",
+		theme : "advanced",
+		skin : "awesome",
+		plugins : "lists,table,searchreplace,print,contextmenu,paste",
+
+		// Theme options
+		theme_advanced_buttons1 : "print,undo,redo,|,formatselect,|,fontselect,|,fontsizeselect,|,bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull,|,forecolor,backcolor,",
+		theme_advanced_buttons2 : "numlist,bullist,|,outdent,indent,blockquote,|,link,unlink,image,|,tablecontrols",
+		theme_advanced_buttons3 : "",
+		theme_advanced_buttons4 : "",
+		theme_advanced_toolbar_location : "top",
+		theme_advanced_toolbar_align : "left",
+		theme_advanced_statusbar_location : "none",
+		theme_advanced_resizing : true,
+
+		/* Path to typo */
+		content_css : "css/typo.css"
+	});
+</script>
+<!-- /TinyMCE -->
+
+</head>
+<body>
+
+<div class="container" style="margin-top:20px;">
+	<div class="page-header">
+		<h2>TinyMCE Skin "Awesome"</h2>
+	</div>
+	
+	<textarea id="e" name="e" rows="30" cols="80" style="width: 100%">
+		&lt;p&gt;
+			This is some example text that you can edit inside the &lt;strong&gt;TinyMCE editor&lt;/strong&gt;.
+		&lt;/p&gt;
+
+		&lt;p&gt;
+			&lt;ol&gt;
+				&lt;li&gt;
+				Item 1
+				&lt;/li&gt;
+				&lt;li&gt;
+				Item 2
+				&lt;/li&gt;
+				&lt;li&gt;
+				Item 3
+				&lt;/li&gt;
+			&lt;/ol&gt;
+		&lt;/p&gt;
+
+
+		&lt;pre&gt;.awesomeSkin .mceSplitButton a.mceOpen {
+	width:9px; 
+	padding:2px;
+	background:url(img/small-grey-disclosure-arrow-down.png) no-repeat 50% 50%; 
+	border:1px solid transparent; 
+	border-left:0;
+}&lt;/pre&gt;
+
+		&lt;p&gt;
+		Nam nisi elit, cursus in rhoncus sit amet, pulvinar laoreet leo. Nam sed lectus quam, ut sagittis tellus. Quisque dignissim mauris a augue rutrum tempor. Donec vitae purus nec massa vestibulum ornare sit amet id tellus. Nunc quam mauris, fermentum nec lacinia eget, sollicitudin nec ante. Aliquam molestie volutpat dapibus. Nunc interdum viverra sodales. Morbi laoreet pulvinar gravida. Quisque ut turpis sagittis nunc accumsan vehicula. Duis elementum congue ultrices. Cras faucibus feugiat arcu quis lacinia. In hac habitasse platea dictumst. Pellentesque fermentum magna sit amet tellus varius ullamcorper. Vestibulum at urna augue, eget varius neque. Fusce facilisis venenatis dapibus. Integer non sem at arcu euismod tempor nec sed nisl. Morbi ultricies, mauris ut ultricies adipiscing, felis odio condimentum massa, et luctus est nunc nec eros.
+		&lt;/p&gt;
+		&lt;p&gt;
+
+		&lt;a href="http://example.com/"&gt;example&lt;/a&gt;
+		&lt;/p&gt;
+
+	</textarea>
+	<p>
+		<div class="hero-unit" style="padding:20px;">
+			<div class="page-header">
+				<h3>TODO</h3>
+			</div>
+			<ol>
+				<li>add missing icons</li>
+				<li>contextmenu needs more padding</li>
+				<li>new blockquote icon</li>
+			</ol>
+		</div>
+	</p>
+	<footer>
+		<a href="//github.com/philipp-spiess/awesome">GitHub</a>
+	</footer>
+</div>
+
+</html>
